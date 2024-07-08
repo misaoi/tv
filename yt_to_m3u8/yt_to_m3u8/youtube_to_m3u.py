@@ -7,7 +7,7 @@ for i in range(last_id+1):
   url = data[data['id'] == i]['url'].values[0]
   response = requests.get(url, timeout=15).text
   if '.m3u8' not in response:
-    m3u8link = "nolive/index.m3u8"
+    m3u8link = "https://raw.githubusercontent.com/misaoi/tv/main/yt_to_m3u8/yt_to_m3u8/nolive/index.m3u8"
   else:
     end = response.find('.m3u8') + 5
     tuner = 100
