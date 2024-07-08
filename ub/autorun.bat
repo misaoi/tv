@@ -1,7 +1,7 @@
 pip install requests
 pip install pandas
 
-cd scripts/
+cd ub/
 python ub.py
 
 pause>nul
